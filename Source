@@ -1,0 +1,198 @@
+
+/**
+ * A program to assist your visit to the doctor.
+ *
+ * @author (Taapas)
+ * @version (21-04-18)
+ */
+import java.util.*;
+
+
+public class Main
+{
+    public static void main (String[] args) 
+    
+    {
+        Scanner sc1 = new Scanner (System.in);
+        String wait;
+        double wait1;
+        double wait2;
+        double result;
+        double qu;
+        double ch;
+        int name;
+        int cho;
+        int symp;
+        int dcn;
+        double feedbck;
+        double cc;
+        double cc3;
+        double cc2;
+        double cc4;
+        
+        cc3=5;
+       
+        cc=500;
+        
+        Scanner input2 = new Scanner(System.in);
+    System.out.print("TYPE IN THE HOSPITAL NAME: ");
+    String text2 = input2.nextLine();
+       
+          Scanner input3 = new Scanner(System.in);
+    System.out.print("TYPE IN THE DOCTOR'S NAME: ");
+    String text3 = input3.nextLine();
+        
+        System.out.println("WELCOME TO THE " + text2 + " HOSPITAL  CENTER. HERE, WE" + 
+        " TRY TO OVERCOME  DISEASES THAT IS SPREADING RAPIDLY");
+       
+        
+        wait1=10;
+        
+        System.out.println(" ");
+        
+        System.out.println("ENTER THE TOTAL NUMBER OF PERSON(S) IN THE LINE");
+        wait2=sc1.nextDouble();
+        
+        result = wait1*wait2;
+        qu=wait2+1;
+        
+        System.out.println(" ");
+        
+        System.out.println("THE TOTAL TIME TAKEN WILL BE - " + result +" Minuites");
+        
+        System.out.println(" ");
+        
+        System.out.println("YOUR TOKEN NO. IS - " + qu);
+       
+        
+       try
+       {
+        Thread.sleep(5000);//5sec
+        }
+         catch(InterruptedException ex)
+        {
+        ex.printStackTrace();
+        }
+
+         System.out.println(" ");
+         
+        
+         Scanner input1 = new Scanner(System.in);
+         System.out.print("TYPE IN YOUR NAME: ");
+         String text = input1.nextLine();
+         System.out.println(" ");
+        System.out.println("Your Name Is " + text + " And Your Token Number Is " + qu);
+        System.out.println(" ");
+        System.out.println("Please Wait While We Redirect You............");
+             try
+       {
+       Thread.sleep(6000);//6sec
+       }
+       catch(InterruptedException ex)
+       {
+       ex.printStackTrace();
+       }
+
+       System.out.println("Your Admission Is Granted!");
+       System.out.println(" ");
+      
+       try
+       {
+        Thread.sleep(5000);//5sec
+        }
+        catch(InterruptedException ex)
+        {
+         ex.printStackTrace();
+         }
+         
+          Scanner input4 = new Scanner(System.in);
+    System.out.print("TYPE IN YOUR SYMPTOMS: ");
+    String text4 = input4.nextLine();
+    
+    System.out.println(" ");
+    System.out.println("You Need To Wait " + result + " Seconds");
+    System.out.println(" ");
+    System.out.println("Please Wait......");
+    
+    try
+       {
+        Thread.sleep(30000);//30sec
+        }
+        catch(InterruptedException ex)
+        {
+         ex.printStackTrace();
+         }
+         
+         System.out.println("You Will Be Meeting The Doctor Shortly.....");
+         System.out.println(" ");
+         Scanner input5 = new Scanner(System.in);
+    System.out.print("TYPE IN THE DISEASE DETECTED/SUSPECTED : ");
+    String text5 = input5.nextLine();
+    
+    System.out.println(" ");
+   
+    Scanner input6 = new Scanner(System.in);
+    System.out.print("TYPE IN THE TREATMENT GIVEN: ");
+    String text6 = input6.nextLine();
+    
+    System.out.print("TYPE THE AMOUNT PAID FOR MEDICINES: ");
+    cc2=sc1.nextDouble();
+    
+    System.out.println(" ");
+    
+         System.out.print("HOW MUCH WILL YOU RATE THE CONSULTING FROM 1 TO 10 : ");
+         feedbck=sc1.nextDouble();
+         System.out.println(" ");
+         System.out.println("Thank You For Your Feedback!");
+         
+         System.out.println(" ");
+          cc4= cc+cc3+cc2;
+         System.out.println("Your Medical Certificate Will Be Issued Shortly.....");
+         
+          try
+       {
+        Thread.sleep(30000);//30sec
+        }
+        catch(InterruptedException ex)
+        {
+         ex.printStackTrace();
+         }
+         
+         System.out.println(" ");
+         System.out.println("____________________________");
+         System.out.println(text2 + " HOSPITALS PRIVATE LIMITED");
+         System.out.println("This certificate is issued in the interest of " +text);
+         System.out.println("The following person is detected/suspected with "
+         + text5);
+         System.out.println("The treatment given is " + text6);
+         System.out.println("This certificate is issued by Dr. " +text3);
+         System.out.println("____________________________");
+         
+         System.out.println(" ");
+         
+         System.out.println("THE BILL WILL BE GENERATED SHORTLY....");
+         
+         try
+       {
+        Thread.sleep(30000);//30sec
+        }
+        catch(InterruptedException ex)
+        {
+         ex.printStackTrace();
+         }
+         
+         System.out.println("__________________");
+         System.out.println(text2 + " HOSPITALS PRIVATE LIMITED");
+         System.out.println("Issued By Dr. "+text3);
+         System.out.println("BILL");
+         System.out.println("Consulting Charge.................... "+cc);
+         System.out.println("Medicines.........................."+cc2);
+         System.out.println("App Charge......................"+cc3);
+         System.out.println("Total Amount................"+cc4);
+         System.out.println("___________________________");
+         
+         System.out.println(" ");
+         System.out.println("Thank You For Visiting");
+         System.out.println("Copyright 2018, Taapas Trivedi");
+        }
+    }
